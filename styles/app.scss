@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
+
+
+// Colors
+$base-color: #08090B;
+$base-grey: #91919D;
+$base-light-grey: #BDBDC4;
+
+
+body, html {
+  font-family: "Manrope", sans-serif;
+  background-color: $base-color;
+}
+
+*, input {
+  border-radius: 0 !important;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+.modal-header, .modal-footer {
+  border-style: none;
+}
+
+.btn-link{
+  color: $base-color;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh; 
+
+  display: flex;
+  align-items: center;
+  justify-content: top;
+
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+}
+
+a{
+  color: $base-color;
+  text-decoration: none;
+}
+
+a:hover{
+  color: $base-grey;
+}
+
+td a > svg{
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+
+td{
+  a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+td > svg{
+  margin-bottom: 3px;
+  margin-right: 14px;
+  margin-left: 4px;
+}
+
+table tr td:nth-child(3){
+    text-align: right;
+}
+
+.search-close{
+  cursor: pointer;
+}
+
+#search-container{
+  display: none;
+}
+
+#search-but{
+  cursor: pointer;
+}
+
+.modal-header{
+  .modal-title{
+    font-size: 22px !important;
+    letter-spacing: 2% !important;
+    font-weight: 400;
+  }
+}
+
+.modal-body{
+  .form-control{
+    padding: 0.775rem 0.75rem;
+  }
+}
+
+.modal-footer{
+  .btn{
+    width: 319px;
+    height: 58px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-link{
+    &:hover{
+      color: $base-grey;
+    }
+  }
+}
+
+
+#folderdiv{
+  display: flex;
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    li{
+      color: $base-light-grey;
+      list-style-type: '/ ';
+      margin-right: 1.3rem;
+      &::marker{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+      &:last-child{
+        a{
+          color: $base-color;
+        }
+      } 
+      a{
+        color: $base-light-grey;
+      }
+      &:nth-child(1){
+        &::marker{
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+#back-but, .back-but{
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  svg{
+    margin-right: 0.7rem;
+  }
+}
+
+.navbar{
+  .container{
+    padding-left: 0;
+  }
+}
+
+th {
+  cursor: pointer;
+}
+
+tbody, td, tfoot, th, thead, tr {
+  border-style: none;
+}
+
+#filestable{
+  thead{
+    tr{
+      border-bottom: solid 1px $base-color;
+    }
+  }
+}
+
+#filez-logo{
+  .modal-content {
+    background-color: $base-color;
+    border: none;
+  }
+}
+
+// #carouselExampleDark > div.carousel-indicators{
+//   bottom: 149px !important;
+// }
+
+// .carousel-indicators{
+//   bottom: 149px !important;
+// }
